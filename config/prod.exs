@@ -15,3 +15,8 @@ config :logger, level: :info
 
 # Runtime production configuration, including reading
 # of environment variables, is done on config/runtime.exs.
+
+config :sample_portfolio, BlogAppWeb.Endpoint,
+  url: [host: “{blog_app}.gigalixirapp.com”],
+  check_origin: [“//{blog_app}.gigalixirapp.com”],
+  cache_static_manifest: “priv/static/cache_manifest.json”
