@@ -18,7 +18,8 @@ config :blog_app, BlogAppWeb.Endpoint,
     layout: false
   ],
   pubsub_server: BlogApp.PubSub,
-  live_view: [signing_salt: "U/odPFS4"]
+  live_view: [signing_salt: "U/odPFS4"],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 # Configures the mailer
 #
