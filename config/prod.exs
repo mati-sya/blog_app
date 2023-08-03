@@ -17,6 +17,6 @@ config :logger, level: :info
 # of environment variables, is done on config/runtime.exs.
 
 config :blog_app, BlogAppWeb.Endpoint,
-  url: [host: "blog_app.gigalixirapp.com", port: 443, scheme: "https"],
+  url: [host: "blog_app.gigalixirapp.com"],
   check_origin: ["//blog_app.gigalixirapp.com"],
   cache_static_manifest: "priv/static/cache_manifest.json"
