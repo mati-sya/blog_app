@@ -12,7 +12,7 @@ config :blog_app,
 
 # Configures the endpoint
 config :blog_app, BlogAppWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "//blogapp.gigalixirapp.com"],
   render_errors: [
     formats: [html: BlogAppWeb.ErrorHTML, json: BlogAppWeb.ErrorJSON],
     layout: false
